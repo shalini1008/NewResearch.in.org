@@ -9,7 +9,7 @@ const Navbar = () => {
     <div>
       
       <div className="bg-pink-500 text-white text-center py-2 text-lg sm:text-xs">
-        📧 nrsshashi@gmail.com 📞 +91-9555022245
+        📧 nrsshashi@gmail.com 📞7011763148 📞 +91-9555022245
       </div>
 
       <nav className="bg-white shadow-md px-6 py-4 flex justify-between items-center">
@@ -20,7 +20,7 @@ const Navbar = () => {
 
        
         <ui className="hidden md:flex space-x-6 text-lg">
-        {["home", "About", "Project", "Office", "Team"].map((item) => (
+        {["home", "About", "Project", "Office", "Our Team"].map((item) => (
           <div key={item}>
             <Link
               to={`/${item}`}
