@@ -36,7 +36,7 @@ const Contact = () => {
     <Layout>
       <div className="flex flex-col mt-4 md:flex-row items-center justify-between p-8  shadow-lg max-w-8xl mx-auto gap-4">
         <div className="hidden md:flex w-1/2">
-          <img src="Contact-US.jpg" alt="Contact Us" className="w-full h-auto" />
+          <img src="/Contact-US.jpg" alt="Contact Us" className="w-full h-auto" />
         </div>
 
         {/* Right Side - Form */}
