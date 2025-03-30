@@ -15,12 +15,12 @@ const Navbar = () => {
       <nav className="bg-white shadow-md px-6 py-4 flex justify-between items-center">
         
         <div className="text-2xl font-bold font-serif sm:text-lg">
-          <span className="text-pink-600 font-extrabold">New Research</span> & Survey Pvt. Ltd.
+          <span className="text-pink-600 font-extrabold">NextGen Research </span> & Survey Pvt. Ltd
         </div>
 
        
         <ui className="hidden md:flex space-x-6 text-lg">
-        {["home", "About", "Project", "Office", "Our Team"].map((item) => (
+        {["home", "About", "Project", "Office", "Our Team","Contact us"].map((item) => (
           <div key={item}>
             <Link
               to={`/${item}`}
@@ -52,7 +52,7 @@ const Navbar = () => {
       {menuOpen && (
     <div className="md:hidden bg-white shadow-md p-4 absolute w-full z-50">
       <ul className="flex flex-col space-y-4 text-center">
-        {["Home", "About", "Project", "Office", "Team"].map((item) => (
+        {["Home", "About", "Project", "Office", "Team","Contact us"].map((item) => (
           <li key={item}>
             <Link
               to={`/${item}`}

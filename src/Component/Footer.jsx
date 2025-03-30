@@ -5,7 +5,7 @@ function Footer() {
     <footer className="bg-black text-white p-6 mt-8">
         <div className="grid md:grid-cols-2 gap-4">
           <div>
-            <h2 className="text-lg font-bold">New Research</h2>
+            <h2 className="text-lg font-bold">NextGen Research & Survey Pvt Ltd</h2>
             <ul>
               {["Home", "About", "Project", "Team"].map((link) => (
                 <li key={link} className="text-sm hover:underline cursor-pointer">

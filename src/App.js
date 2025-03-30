@@ -5,6 +5,7 @@ import About from "./Pages/About";
 import Office from "./Pages/Office";
 import Project from "./Pages/Project";
 import Team from "./Pages/Team";
+import Contact from "./Pages/Contact";
 function App() {
   return (
     <Router>
@@ -15,6 +16,7 @@ function App() {
         <Route path="/Office" element={<Office/>}/>
         <Route path="/Project" element={<Project/>}/>
         <Route path="/Our Team" element={<Team/>}/>
+        <Route path="/Contact us" element={<Contact/>}/>
       </Routes>
     </Router>
   );

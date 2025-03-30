@@ -15,14 +15,16 @@ import OurJourney from "../Component/OurJourney";
 const images = [
   "/Home1.jpeg",
   "/Home2.jpeg",
-  "/Home3.jpeg",
-  "/Home4.jpeg",
   "/Home5.jpeg",
+  "/Home4.jpeg",
   "/Home6.jpeg",
-  "/Home7.jpeg",
+  // "/Home8.jpg",
+  "/Home15.jpeg",
   "/Home9.jpg",
-  "/Home10.jpeg",
-  "/Home11.jpeg",
+  "/Home10.jpg",
+  "/Home11.jpg",
+  "/Home12.jpg",
+  "/Home13.jpg",
 ];
 const clients = [
   { name: "CRISIL", logo: "/logo1.png" },
@@ -68,7 +70,7 @@ function Home() {
       <div className="relative w-full max-w-screen-3xl ">
       <Swiper
         modules={[Autoplay, Navigation]}
-        autoplay={{ delay: 2000, disableOnInteraction: false }}
+        autoplay={{ delay: 2500, disableOnInteraction: false }}
         loop={true}
         navigation={{ nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }}
         className="w-full h-[500px]"
