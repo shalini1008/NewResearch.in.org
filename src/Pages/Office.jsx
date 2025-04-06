@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import Layout from "../Component/Layout";
+import { MapPin, User, Building2 } from "lucide-react";
+import { motion } from "framer-motion";
+
 const offices = [
   { state: "Maharashtra", name: "Shri Gautam Vasantoa", address: "Babachi Krupa Building, Ambegaon Pathar, Pune – 411046." },
   { state: "Tamilnadu", name: "AJI STENIN.S.R", address: "Stenins Abode, Mailara-3, Thirparappu Kanyakumari Tamilnadu" },
@@ -16,63 +19,42 @@ const offices = [
   { state: "Assam", name: "Mr. Hemat Sakia", address: "B 116/3, Near Gauri Ganesh Temple Guwahati"},
   { state: "Manipur", name: "Sarangthem Biroj singh", address: "Singjamei Chingamakha chanam pukhri Lewa Road, imphal (east)"}
 ];
-function Office() {
+
+const Office = () => {
   const [selectedState, setSelectedState] = useState(null);
+
   return (
     <Layout>
-       <h1 className="text-3xl text-center font-bold m-4">Our Offices</h1>
-       <div className="flex flex-col md:flex-row items-start justify-center p-4">
-  {/* Left Table Section */}
-  <div className="w-full md:w-1/2 p-4">
-    <table className="border-collapse border border-gray-300 w-full">
-      <thead>
-        <tr className="bg-gray-200">
-          <th className="border p-2">State</th>
-          <th className="border p-2">Coordinator</th>
-          <th className="border p-2">Address</th>
-        </tr>
-      </thead>
-      <tbody>
+      <h1 className="text-4xl font-bold text-center my-8 text-blue-800">Our Offices</h1>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-6 pb-10">
         {offices.map((office, index) => (
-          <tr
+          <motion.div
             key={index}
-            className={`cursor-pointer transition-all duration-200 ${
-              selectedState === office.state ? "bg-blue-200" : "hover:bg-gray-100"
-            }`}
             onMouseEnter={() => setSelectedState(office.state)}
+            whileHover={{ scale: 1.03 }}
+            transition={{ type: "spring", stiffness: 300 }}
+            className={`rounded-xl shadow-md p-6 border-2 ${
+              selectedState === office.state ? "border-blue-400 bg-blue-50" : "border-gray-200 bg-white"
+            }`}
           >
-            <td className="border p-2">{office.state}</td>
-            <td className="border p-2">{office.name}</td>
-            <td className="border p-2">{office.address}</td>
-          </tr>
+            <div className="flex items-center mb-2 text-blue-700 font-semibold">
+              <Building2 className="w-5 h-5 mr-2" />
+              {office.state}
+            </div>
+            <div className="flex items-center text-gray-800">
+              <User className="w-5 h-5 mr-2 text-gray-500" />
+              {office.name}
+            </div>
+            <div className="flex items-start mt-2 text-gray-600">
+              <MapPin className="w-5 h-5 mr-2 text-gray-400 mt-1" />
+              <p className="leading-snug">{office.address}</p>
+            </div>
+          </motion.div>
         ))}
-      </tbody>
-    </table>
-  </div>
-
-  {/* Right Map Section */}
-  <div className="w-full md:w-1/2 p-4 flex justify-center">
-    <div className="relative">
-      <img
-        src="./office.png"
-        alt="India map"
-        className="max-w-full h-auto"
-      />
-      
-      {/* Hovered State Highlight */}
-      {selectedState && (
-        <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center">
-          <div className="bg-black bg-opacity-50 text-white p-2 rounded-lg">
-            {selectedState}
-          </div>
-        </div>
-      )}
-    </div>
-  </div>
-</div>
-
+      </div>
     </Layout>
-  )
-}
+  );
+};
 
-export default Office
+export default Office;

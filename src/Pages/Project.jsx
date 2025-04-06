@@ -158,7 +158,7 @@ export default function Project() {
           className="bg-pink-500 text-white text-center px-6 py-3 rounded-lg shadow-md hover:bg-pink-600 transition"
           onClick={() =>
             window.open(
-              "https://drive.google.com/file/d/1Kf0zDJgbMpwvFUGERiIp7tTlVzUHSgfB/view?usp=sharing",
+              "https://drive.google.com/file/d/1t-EW89ODI6MSSogLXlx2YisDX9rdDFRC/view?usp=sharing",
               "_blank"
             )
           }

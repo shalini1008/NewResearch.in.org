@@ -12,19 +12,20 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import OurJourney from "../Component/OurJourney";
+import Program from "../Component/Program";
 const images = [
   "/Home1.jpeg",
   "/Home2.jpeg",
-  "/Home5.jpeg",
+  "/Home3.jpg",
   "/Home4.jpeg",
   "/Home6.jpeg",
-  // "/Home8.jpg",
-  "/Home15.jpeg",
+  "/Home8.jpg",
   "/Home9.jpg",
+  "/Home15.jpeg",
   "/Home10.jpg",
   "/Home11.jpg",
-  "/Home12.jpg",
   "/Home13.jpg",
+  "/Home14.jpg",
 ];
 const clients = [
   { name: "CRISIL", logo: "/logo1.png" },
@@ -116,6 +117,29 @@ function Home() {
         ))}
       </div>
       <OurJourney></OurJourney>
+      <Program></Program>
+      <section className="py-12 bg-gray-100">
+      <div className="text-center mb-8">
+        <h2 className="text-3xl font-bold text-gray-800">Year-wise Financial Growth</h2>
+        <p className="text-gray-600 mt-2">An overview of our financial performance over the years.</p>
+      </div>
+      
+      <div className="flex justify-center items-center">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          whileHover={{ scale: 1.05 }}
+          className="p-4 bg-white rounded-xl shadow-lg"
+        >
+          <img
+            src="./growth.png"
+            alt="growth"
+            className="max-w-full h-auto object-contain"
+          />
+        </motion.div>
+      </div>
+    </section>
       {/* client */}
       <section className="py-10 px-6 bg-gray-50">
         <div className="text-center mb-8">
