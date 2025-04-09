@@ -27,7 +27,7 @@ function Program() {
         </p>
       </div>
       <motion.div
-  className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 justify-items-center"
+  className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 justify-items-center"
 >
   {sponsors.map((sponsor, index) => (
     <motion.div
@@ -45,7 +45,7 @@ function Program() {
       <img
         src={sponsor.logo}
         alt={sponsor.name}
-        className="w-28 h-20 object-contain"
+        className="w-28 h-20 "
       />
     </motion.div>
   ))}

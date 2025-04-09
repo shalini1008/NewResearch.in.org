@@ -153,7 +153,27 @@ export default function Project() {
           </div>
         ))}
       </div>
-      <div className="flex justify-center">
+      <div className="px-4 py-10 bg-gray-50">
+  <div className="px-4 py-10 bg-gray-50">
+  <h1 className="text-3xl font-bold text-center text-blue-600 mb-8">
+    All Other Projects
+  </h1>
+
+  <div className="flex flex-wrap justify-center gap-6">
+    {Array.from({ length: 6 }).map((_, index) => (
+      <img
+        key={index}
+        src={`./project${index + 1}.png`}
+        alt={`Project ${index + 1}`}
+        className="rounded-lg shadow-md max-w-full h-auto border border-gray-200"
+        style={{ maxWidth: "600px" }} 
+      />
+    ))}
+  </div>
+</div>
+
+    </div>
+<div className="flex justify-center">
         <button
           className="bg-pink-500 text-white text-center px-6 py-3 rounded-lg shadow-md hover:bg-pink-600 transition"
           onClick={() =>

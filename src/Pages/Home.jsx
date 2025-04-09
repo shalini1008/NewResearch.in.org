@@ -18,6 +18,7 @@ const images = [
   "/Home2.jpeg",
   "/Home3.jpg",
   "/Home4.jpeg",
+  "/Home5.jpg",
   "/Home6.jpeg",
   "/Home8.jpg",
   "/Home9.jpg",
@@ -41,6 +42,7 @@ const clients = [
   { name: "ANKH", logo: "/logo11.png" },
   { name: "APITCO", logo: "/logo12.png" },
   { name: "SPL", logo: "/logo13.png" },
+  { name: "NCML", logo: "/logo14.png" },
 ];
 function Home() {
   const cards = [
