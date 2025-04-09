@@ -122,8 +122,8 @@ function Home() {
       <Program></Program>
       <section className="py-12 bg-gray-100">
       <div className="text-center mb-8">
-        <h2 className="text-3xl font-bold text-gray-800">Year-wise Financial Growth</h2>
-        <p className="text-gray-600 mt-2">An overview of our financial performance over the years.</p>
+        <h2 className="text-3xl font-bold text-gray-800">Year-wise Number of Assignment Handled By organisation</h2>
+        <p className="text-gray-600 mt-2">An overview of our Assignment over the years.</p>
       </div>
       
       <div className="flex justify-center items-center">
