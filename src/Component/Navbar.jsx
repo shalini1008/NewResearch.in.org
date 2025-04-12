@@ -52,7 +52,7 @@ const Navbar = () => {
       {menuOpen && (
     <div className="md:hidden bg-white shadow-md p-4 absolute w-full z-50">
       <ul className="flex flex-col space-y-4 text-center">
-        {["Home", "About", "Project", "Office", "Team","Contact us"].map((item) => (
+        {["home", "About", "Project", "Office", "Our Team","Contact us"].map((item) => (
           <li key={item}>
             <Link
               to={`/${item}`}
