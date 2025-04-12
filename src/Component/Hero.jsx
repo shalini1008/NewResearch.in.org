@@ -18,13 +18,10 @@ const Hero = ({ title, subtitle }) => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
         >
-          New Research & Survey (NRS) is a distinguished Research and Development Consultancy Organization, 
-          dedicated to delivering high-quality research, policy analysis, and field-based surveys.
-          Established in 2002 and officially registered in 2012 under the Government of the National Capital Territory of Delhi, 
-          NRS further strengthened its presence by becoming a private limited entity in 2025.
-          With a strong reputation as a premier research agency, NRS is committed to generating data-driven insights 
-          that empower policymakers, organizations, and development initiatives. Over the years, the organization has played 
-          a vital role in conducting impactful studies across various sectors, ensuring evidence-based solutions for sustainable progress.
+          NextGen Research & Survey Pvt. Ltd. (NRS) is a distinguished Research and Development Consultancy Organization committed to delivering high-quality research, policy analysis, and field-based surveys. Originally established in 2002 as New Research & Survey, the organization was formally registered in 2012 under the Government of the National Capital Territory of Delhi. In 2025, NRS evolved into a private limited entity, adopting its new identity as NextGen Research & Survey Pvt. Ltd., marking a significant milestone in its journey.
+
+Renowned as a premier research agency, NRS is dedicated to providing data-driven insights that empower policymakers, organizations, and development initiatives. With over two decades of experience, the organization has earned a strong reputation for conducting impactful studies across diverse sectors. By combining rigorous methodologies with a commitment to excellence, NRS delivers evidence-based solutions that drive sustainable progress and informed decision-making.
+
         </motion.p>
       </div>
     </motion.div>
